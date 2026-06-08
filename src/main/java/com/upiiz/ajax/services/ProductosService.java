@@ -11,6 +11,6 @@ public interface ProductosService {
     ProductosEntity productoPorId(Long id);
     ProductosEntity agregarProducto(ProductosEntity productos);
     ProductosEntity actualizarProducto(Long id, ProductosEntity productos);
-    Void eliminarProdcuto(Long id);
+    Void eliminarProducto(Long id);
 
 }

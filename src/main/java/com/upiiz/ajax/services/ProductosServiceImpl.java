@@ -35,7 +35,7 @@ public class ProductosServiceImpl implements ProductosService {
     }
 
     @Override
-    public Void eliminarProdcuto(Long id) {
+    public Void eliminarProducto(Long id) {
         return null;
     }
 }
