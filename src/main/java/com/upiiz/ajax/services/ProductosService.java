@@ -3,14 +3,15 @@ package com.upiiz.ajax.services;
 import com.upiiz.ajax.entities.ProductosEntity;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ProductosService {
 
     //METODOS - MENU DE OPCIONES
     List<ProductosEntity> listado();
-    ProductosEntity productoPorId(Long id);
-    ProductosEntity agregarProducto(ProductosEntity productos);
-    ProductosEntity actualizarProducto(Long id, ProductosEntity productos);
-    Void eliminarProducto(Long id);
+    Optional<ProductosEntity> productoPorId (Long id);
+    ProductosEntity agregarProducto (ProductosEntity producto);
+    ProductosEntity actualizarProducto(Long id,ProductosEntity producto);
+    void eliminarProducto (Long id);
 
 }
